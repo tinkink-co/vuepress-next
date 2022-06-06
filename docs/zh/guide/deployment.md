@@ -53,17 +53,8 @@ jobs:
         with:
           # 选择要使用的 node 版本
           node-version: '14'
-
-      # 缓存 node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: yarn-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+          # 缓存 node_modules
+          cache: yarn
 
       # 如果缓存没有命中，安装依赖
       - name: Install dependencies

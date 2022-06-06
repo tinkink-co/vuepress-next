@@ -32,7 +32,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 
 ```bash
 # install in your project
-pnpm add -D vue @vuepress/client@nextvuepress@next
+pnpm add -D vuepress@next vue @vuepress/client@next
 
 # create a markdown file
 echo '# Hello VuePress' > README.md
