@@ -2,8 +2,8 @@
 
 ## 依赖环境
 
-- [Node.js v14+](https://nodejs.org/)
-- [Yarn v1 classic](https://classic.yarnpkg.com/zh-Hans/) （可选）
+- [Node.js v14+](https://nodejs.org/zh-cn/)
+- [pnpm](https://pnpm.io/zh/) （可选）
 
 ::: tip
 - 使用 [pnpm](https://pnpm.io/zh/) 时，你可能需要安装 `vue` 和 `@vuepress/client` 作为 peer-dependencies ，即 `pnpm add -D vue @vuepress/client@next` 。
@@ -24,7 +24,16 @@ cd vuepress-starter
 - **步骤2**: 初始化项目
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="PNPM" active>
+
+```bash
+git init
+pnpm init
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
 
 ```bash
 git init
@@ -47,7 +56,15 @@ npm init
 - **步骤3**: 将 VuePress 安装为本地依赖
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="pnpm" active>
+
+```bash
+pnpm add -D vue @vuepress/client@next vuepress@next
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
 
 ```bash
 yarn add -D vuepress@next
@@ -93,7 +110,15 @@ echo '# Hello VuePress' > docs/README.md
 - **步骤7**: 在本地启动服务器来开发你的文档网站
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="PNPM" active>
+
+```bash
+pnpm docs:dev
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
 
 ```bash
 yarn docs:dev

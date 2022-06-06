@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - [Node.js v14+](https://nodejs.org/)
-- [Yarn v1 classic](https://classic.yarnpkg.com/en/) (Optional)
+- [pnpm](https://pnpm.io/) (Optional)
 
 ::: tip
 - With [pnpm](https://pnpm.io/), you may need to install `vue` and `@vuepress/client` as peer-dependencies, i.e. `pnpm add -D vue @vuepress/client@next`.
@@ -24,7 +24,16 @@ cd vuepress-starter
 - **Step 2**: Initialize your project
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="PNPM" active>
+
+```bash
+git init
+pnpm init
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
 
 ```bash
 git init
@@ -46,7 +55,15 @@ npm init
 - **Step 3**: Install VuePress locally
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="PNPM" active>
+
+```bash
+pnpm add -D vue @vuepress/client@next vuepress@next
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
 
 ```bash
 yarn add -D vuepress@next
@@ -92,7 +109,15 @@ echo '# Hello VuePress' > docs/README.md
 - **Step 7**: Serve the documentation site in the local server
 
 <CodeGroup>
-  <CodeGroupItem title="YARN" active>
+  <CodeGroupItem title="PNPM" active>
+
+```bash
+pnpm docs:dev
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
 
 ```bash
 yarn docs:dev

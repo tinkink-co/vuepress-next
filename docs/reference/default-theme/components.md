@@ -59,10 +59,19 @@
 
 ````md
 <CodeGroup>
+  <CodeGroupItem title="PNPM">
+
+```bash:no-line-numbers
+pnpm install
+```
+
+  </CodeGroupItem>
+
+<CodeGroup>
   <CodeGroupItem title="YARN">
 
 ```bash:no-line-numbers
-yarn
+yarn install
 ```
 
   </CodeGroupItem>
